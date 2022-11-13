@@ -12,7 +12,7 @@
 
     - name: copy nginx config file
 
-      copy: src=/oper/code/nginx.conf dest=/etc/nginx/sites-available/default
+      copy: src=/oper/devops/nginx.conf dest=/etc/nginx/sites-available/default
 
     - name: enable configuration
 
