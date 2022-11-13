@@ -12,7 +12,7 @@
 
     - name: copy nginx config file
 
-      copy: src=/root/SiteH/nginx.conf dest=/etc/nginx/sites-available/default
+      copy: src=/oper/code/nginx.conf dest=/etc/nginx/sites-available/default
 
     - name: enable configuration
 
@@ -20,7 +20,7 @@
 
     - name: copy index.html
 
-      template: src=/root/SiteH/index.html dest=/usr/share/nginx/html/index.html mode=0664
+      template: src=/oper/site/index.html dest=/usr/share/nginx/html/index.html mode=0664
 
     - name: restart nginx
 
